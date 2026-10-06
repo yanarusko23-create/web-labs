@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторна робота №1 — JavaScript triangle()</title>
+</head>
+<body>
+  <h1>Лабораторна робота №1</h1>
+  <p>Відкрийте консоль браузера (F12 → Console) і викликайте функцію <code>triangle(...)</code>.</p>
+
+  <script>
+    /**
+     * Розв'язує прямокутний трикутник за двома відомими елементами.
+     * Можливі "типи": "leg", "hypotenuse", "adjacent angle", "opposite angle", "angle"
+     *
+     * @param {number} val1 - значення першого аргумента
+     * @param {string} type1 - тип першого аргумента
+     * @param {number} val2 - значення другого аргумента
+     * @param {string} type2 - тип другого аргумента
+     * @returns {string} "success" | "failed" | повідомлення про некоректність даних
+     */
+    function triangle(val1, type1, val2, type2) {
+      console.log(
+        'Інструкція: triangle(value1, type1, value2, type2)\n' +
+        'Можливі типи: "leg" (катет), "hypotenuse" (гіпотенуза), ' +
+        '"adjacent angle" (прилеглий кут), "opposite angle" (протилежний кут), "angle" (гострий кут при гіпотенузі).\n' +
+        'Кути задаються у градусах. Приклад: triangle(4, "leg", 8, "hypotenuse")'
+      );
+
+      const validTypes = ['leg', 'hypotenuse', 'adjacent angle', 'opposite angle', 'angle'];
+      const isAngleType = (t) => t === 'adjacent angle' || t === 'opposite angle' || t === 'angle';
+      const toRad = (deg) => (deg * Math.PI) / 180;
+      const toDeg = (rad) => (rad * 180) / Math.PI;
+      const isInvalidNumber = (x) => typeof x !== 'number' || Number.isNaN(x) || x <= 0;
+
+      // Перевірка коректності введених "типів" (наприклад, "hypotenus" замість "hypotenuse")
+      if (
+        typeof val1 !== 'number' ||
+        typeof val2 !== 'number' ||
+        !validTypes.includes(type1) ||
+        !validTypes.includes(type2)
+      ) {
+        console.log('Некоректні аргументи. Будь ласка, перечитайте інструкцію.');
+        return 'failed';
+      }
+
+      let a, b, c, alpha, beta;
+
+      try {
+        if (type1 === 'leg' && type2 === 'leg') {
+          if (isInvalidNumber(val1) || isInvalidNumber(val2)) throw 'Zero or negative input';
+          a = val1;
+          b = val2;
+          c = Math.sqrt(a * a + b * b);
+          alpha = toDeg(Math.atan(a / b));
+          beta = 90 - alpha;
+        } else if (
+          (type1 === 'leg' && type2 === 'hypotenuse') ||
+          (type1 === 'hypotenuse' && type2 === 'leg')
+        ) {
+          const leg = type1 === 'leg' ? val1 : val2;
+          const hyp = type1 === 'hypotenuse' ? val1 : val2;
+          if (isInvalidNumber(leg) || isInvalidNumber(hyp)) throw 'Zero or negative input';
+          if (leg >= hyp) throw 'Leg must be less than hypotenuse';
+          a = leg;
+          c = hyp;
+          b = Math.sqrt(c * c - a * a);
+          alpha = toDeg(Math.asin(a / c));
+          beta = 90 - alpha;
+        } else if (
+          (type1 === 'leg' && type2 === 'adjacent angle') ||
+          (type1 === 'adjacent angle' && type2 === 'leg')
+        ) {
+          const leg = type1 === 'leg' ? val1 : val2;
+          const ang = type1 === 'adjacent angle' ? val1 : val2;
+          if (isInvalidNumber(leg) || isInvalidNumber(ang)) throw 'Zero or negative input';
+          if (ang >= 90) throw 'Angle must be acute (0-90 degrees)';
+          a = leg;
+          beta = ang; // прилеглий до a кут — це beta
+          c = a / Math.cos(toRad(beta));
+          b = a * Math.tan(toRad(beta));
+          alpha = 90 - beta;
+        } else if (
+          (type1 === 'leg' && type2 === 'opposite angle') ||
+          (type1 === 'opposite angle' && type2 === 'leg')
+        ) {
+          const leg = type1 === 'leg' ? val1 : val2;
+          const ang = type1 === 'opposite angle' ? val1 : val2;
+          if (isInvalidNumber(leg) || isInvalidNumber(ang)) throw 'Zero or negative input';
+          if (ang >= 90) throw 'Angle must be acute (0-90 degrees)';
+          a = leg;
+          alpha = ang; // протилежний до a кут — це alpha
+          c = a / Math.sin(toRad(alpha));
+          b = a / Math.tan(toRad(alpha));
+          beta = 90 - alpha;
+        } else if (
+          (type1 === 'hypotenuse' && isAngleType(type2)) ||
+          (type2 === 'hypotenuse' && isAngleType(type1))
+        ) {
+          const hyp = type1 === 'hypotenuse' ? val1 : val2;
+          const ang = type1 === 'hypotenuse' ? val2 : val1;
+          if (isInvalidNumber(hyp) || isInvalidNumber(ang)) throw 'Zero or negative input';
+          if (ang >= 90) throw 'Angle must be acute (0-90 degrees)';
+          c = hyp;
+          alpha = ang;
+          a = c * Math.sin(toRad(alpha));
+          b = c * Math.cos(toRad(alpha));
+          beta = 90 - alpha;
+        } else {
+          console.log('Несумісна пара "типів" аргументів. Будь ласка, перечитайте інструкцію.');
+          return 'failed';
+        }
+      } catch (e) {
+        console.log(e);
+        return typeof e === 'string' ? e : 'failed';
+      }
+
+      console.log('a =', a);
+      console.log('b =', b);
+      console.log('c =', c);
+      console.log('alpha =', alpha);
+      console.log('beta =', beta);
+      return 'success';
+    }
+
+    // Тестові запуски
+    triangle(7, "leg", 18, "hypotenuse");
+    triangle(60, "opposite angle", 5, "leg");
+    triangle(43.13, "angle", -2, "hypotenuse");
+  </script>
+</body>
+</html>
