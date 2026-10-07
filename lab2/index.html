@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='uk'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Лабораторна робота №2</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    pre { background: #f4f4f4; padding: 1rem; border-radius: 8px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Лабораторна робота №2: ООП у JavaScript</h1>
+  <p>Результати також доступні в консолі браузера (F12 → Console).</p>
+  <pre id='out'></pre>
+
+  <script>
+    // Дублюємо console.log на сторінку
+    const out = document.getElementById('out');
+    const originalLog = console.log.bind(console);
+    console.log = (...args) => {
+      originalLog(...args);
+      out.textContent += args
+        .map(a => (typeof a === 'object' ? JSON.stringify(a) : String(a)))
+        .join(' ') + '\n';
+    };
+  </script>
+  <script src='part1.js'></script>
+  <script src='part2.js'></script>
+  <script src='part3.js'></script>
+</body>
+</html>
