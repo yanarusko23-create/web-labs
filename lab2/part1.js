@@ -1,7 +1,6 @@
 console.log('=== Частина 1: об\'єкти та Truck (без класів ES6) ===');
 
-const MY_NAME = 'Name Surname'; // ЗАМІНІТЬ на своє ім'я та прізвище
-
+const MY_NAME = 'Yana_Rusko';
 // 1.2.3 — через new Object()
 const car1 = new Object();
 car1.color = 'red';
