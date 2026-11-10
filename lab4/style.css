@@ -1,0 +1,13 @@
+body {
+  margin: 8px;
+  font-family: "Times New Roman", serif;
+  background: #fff;
+  color: #000;
+}
+#menu h1 { text-align: center; margin: 21px 0; }
+#menu select, #menu button { margin-right: 4px; }
+#game p { margin: 0 0 14px; }
+#pixel {
+  position: fixed;      /* координати рахуються від вікна браузера */
+  cursor: pointer;
+}
