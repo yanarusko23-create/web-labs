@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixel Hunt Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Стартовий екран -->
+  <div id="menu">
+    <h1>Pixel Hunt</h1>
+    <label for="difficulty">Choose difficulty:</label>
+    <select id="difficulty">
+      <option value="">--Please choose an option--</option>
+      <option value="lazy">Lazy</option>
+      <option value="normal">Normal</option>
+      <option value="hard">Catch me if you can</option>
+    </select>
+    <label for="color">Choose color:</label>
+    <select id="color">
+      <option value="">--Please choose an option--</option>
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+    </select>
+    <button id="start" type="button">Start</button>
+  </div>
+
+  <!-- Ігровий екран (спочатку прихований) -->
+  <div id="game" hidden>
+    <p id="score">score: 0</p>
+    <p id="timer">time left for click: </p>
+    <div id="pixel"></div>
+  </div>
+
+  <!-- Скрипт підключено перед закриваючим тегом </body> -->
+  <script src="script.js"></script>
+</body>
+</html>
