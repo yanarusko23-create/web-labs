@@ -1,0 +1,41 @@
+{
+  "category": "Смартфони",
+  "shortname": "smartphones",
+  "items": [
+    {
+      "id": 1,
+      "name": "Nova X1",
+      "shortname": "nova-x1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 19999
+    },
+    {
+      "id": 2,
+      "name": "Nova X1 Pro",
+      "shortname": "nova-x1-pro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 26499
+    },
+    {
+      "id": 3,
+      "name": "Orbit S5",
+      "shortname": "orbit-s5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 14999
+    },
+    {
+      "id": 4,
+      "name": "Orbit S5 Lite",
+      "shortname": "orbit-s5-lite",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 9999
+    },
+    {
+      "id": 5,
+      "name": "Pixel Wave 3",
+      "shortname": "pixel-wave-3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 17499
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "category": "Навушники",
+  "shortname": "headphones",
+  "items": [
+    {
+      "id": 1,
+      "name": "SoundPods Mini",
+      "shortname": "soundpods-mini",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 2499
+    },
+    {
+      "id": 2,
+      "name": "SoundPods Pro",
+      "shortname": "soundpods-pro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 4999
+    },
+    {
+      "id": 3,
+      "name": "BassMax Over-Ear",
+      "shortname": "bassmax-over-ear",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 3799
+    },
+    {
+      "id": 4,
+      "name": "Silence ANC 2",
+      "shortname": "silence-anc-2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 6999
+    },
+    {
+      "id": 5,
+      "name": "Runner Sport",
+      "shortname": "runner-sport",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 1899
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "category": "Ноутбуки",
+  "shortname": "laptops",
+  "items": [
+    {
+      "id": 1,
+      "name": "AeroBook 14",
+      "shortname": "aerobook-14",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 32999
+    },
+    {
+      "id": 2,
+      "name": "AeroBook 16 Pro",
+      "shortname": "aerobook-16-pro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 52999
+    },
+    {
+      "id": 3,
+      "name": "CoreBook Air",
+      "shortname": "corebook-air",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 27499
+    },
+    {
+      "id": 4,
+      "name": "WorkMate 15",
+      "shortname": "workmate-15",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 21999
+    },
+    {
+      "id": 5,
+      "name": "Gamer Titan 17",
+      "shortname": "gamer-titan-17",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 64999
+    }
+  ]
+}

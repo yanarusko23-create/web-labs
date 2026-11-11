@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Смартфони",
+    "shortname": "smartphones",
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 2,
+    "name": "Ноутбуки",
+    "shortname": "laptops",
+    "notes": ""
+  },
+  {
+    "id": 3,
+    "name": "Навушники",
+    "shortname": "headphones",
+    "notes": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": 4,
+    "name": "Аксесуари",
+    "shortname": "accessories",
+    "notes": ""
+  }
+]
