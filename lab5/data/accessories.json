@@ -1,0 +1,41 @@
+{
+  "category": "Аксесуари",
+  "shortname": "accessories",
+  "items": [
+    {
+      "id": 1,
+      "name": "Зарядка FastCharge 65W",
+      "shortname": "fastcharge-65w",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 1299
+    },
+    {
+      "id": 2,
+      "name": "Кабель USB-C 2 м",
+      "shortname": "usb-c-cable-2m",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 299
+    },
+    {
+      "id": 3,
+      "name": "Чохол ShieldCase",
+      "shortname": "shieldcase",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 499
+    },
+    {
+      "id": 4,
+      "name": "Powerbank 20000 mAh",
+      "shortname": "powerbank-20000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 1599
+    },
+    {
+      "id": 5,
+      "name": "Підставка для ноутбука",
+      "shortname": "laptop-stand",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "price": 899
+    }
+  ]
+}
