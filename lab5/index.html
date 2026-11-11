@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лабораторна 5 — Ajax-каталог</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <span class="logo">TechShop</span>
+      <nav aria-label="Головне меню">
+        <a href="index.html" id="nav-home">Додому</a>
+        <a href="#" id="nav-catalog" data-action="catalog">Каталог</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="content" aria-live="polite">
+    <!-- Вміст завантажується динамічно скриптом script.js -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Лабораторна робота №5 · JavaScript + Ajax (fetch + JSON)</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
