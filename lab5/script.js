@@ -84,13 +84,16 @@ function renderCategoryList(categories) {
 function renderCategory(data, titlePrefix = "") {
   const products = el("div", { class: "products" });
   for (const item of data.items) {
+    const placeholder = "https://placehold.co/200x200/png?text=" + encodeURIComponent(item.shortname);
     const img = el("img", {
-      src: "https://placehold.co/200x200/png?text=" + encodeURIComponent(item.shortname),
+      src: item.image || placeholder,
       alt: item.name,
       width: "200",
       height: "200",
       loading: "lazy"
     });
+    // Якщо файл зображення відсутній — показуємо заглушку
+    img.addEventListener("error", () => { img.src = placeholder; }, { once: true });
     products.append(
       el("article", { class: "product" },
         img,
