@@ -6,36 +6,41 @@
       "id": 1,
       "name": "Зарядка FastCharge 65W",
       "shortname": "fastcharge-65w",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 1299
+      "description": "Зарядний пристрій 65 Вт з USB-C: заряджає і телефон, і ноутбук одним адаптером.",
+      "price": 1299,
+      "image": "img/fastcharge-65w.jpg"
     },
     {
       "id": 2,
       "name": "Кабель USB-C 2 м",
       "shortname": "usb-c-cable-2m",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 299
+      "description": "Міцний кабель у нейлоновому обплетенні для зарядки та передачі даних.",
+      "price": 299,
+      "image": "img/usb-c-cable-2m.jpg"
     },
     {
       "id": 3,
       "name": "Чохол ShieldCase",
       "shortname": "shieldcase",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 499
+      "description": "Захисний чохол із підсиленими кутами та бортиком навколо камери.",
+      "price": 499,
+      "image": "img/shieldcase.jpg"
     },
     {
       "id": 4,
       "name": "Powerbank 20000 mAh",
       "shortname": "powerbank-20000",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 1599
+      "description": "Місткий повербанк: кілька повних зарядок смартфона, порти USB-C та USB-A.",
+      "price": 1599,
+      "image": "img/powerbank-20000.jpg"
     },
     {
       "id": 5,
       "name": "Підставка для ноутбука",
       "shortname": "laptop-stand",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 899
+      "description": "Складна алюмінієва підставка з регулюванням нахилу для комфортної роботи та охолодження.",
+      "price": 899,
+      "image": "img/laptop-stand.jpg"
     }
   ]
 }

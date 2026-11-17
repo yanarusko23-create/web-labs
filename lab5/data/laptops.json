@@ -6,36 +6,41 @@
       "id": 1,
       "name": "AeroBook 14",
       "shortname": "aerobook-14",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 32999
+      "description": "Тонкий ультрабук 14″ вагою 1,2 кг для навчання та роботи в дорозі, до 12 годин автономності.",
+      "price": 32999,
+      "image": "img/aerobook-14.jpg"
     },
     {
       "id": 2,
       "name": "AeroBook 16 Pro",
       "shortname": "aerobook-16-pro",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 52999
+      "description": "Потужний 16″ ноутбук із яскравим екраном для монтажу, дизайну та програмування.",
+      "price": 52999,
+      "image": "img/aerobook-16-pro.jpg"
     },
     {
       "id": 3,
       "name": "CoreBook Air",
       "shortname": "corebook-air",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 27499
+      "description": "Легкий безвентиляторний ноутбук: тиха робота, швидкий SSD і зручна клавіатура.",
+      "price": 27499,
+      "image": "img/corebook-air.jpg"
     },
     {
       "id": 4,
       "name": "WorkMate 15",
       "shortname": "workmate-15",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 21999
+      "description": "Надійний офісний ноутбук 15,6″ з цифровим блоком клавіш і портами для периферії.",
+      "price": 21999,
+      "image": "img/workmate-15.jpg"
     },
     {
       "id": 5,
       "name": "Gamer Titan 17",
       "shortname": "gamer-titan-17",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 64999
+      "description": "Ігровий ноутбук 17″ з дискретною відеокартою, екраном 165 Гц і посиленим охолодженням.",
+      "price": 64999,
+      "image": "img/gamer-titan-17.jpg"
     }
   ]
 }

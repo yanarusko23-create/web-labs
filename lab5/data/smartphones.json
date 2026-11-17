@@ -6,36 +6,41 @@
       "id": 1,
       "name": "Nova X1",
       "shortname": "nova-x1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 19999
+      "description": "Збалансований флагман: яскравий AMOLED-екран 6,5″, швидкий процесор і камера 50 Мп для щоденних задач.",
+      "price": 19999,
+      "image": "img/nova-x1.jpg"
     },
     {
       "id": 2,
       "name": "Nova X1 Pro",
       "shortname": "nova-x1-pro",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 26499
+      "description": "Версія Pro з екраном 120 Гц, потрійною камерою 108 Мп та швидкою зарядкою 80 Вт.",
+      "price": 26499,
+      "image": "img/nova-x1-pro.jpg"
     },
     {
       "id": 3,
       "name": "Orbit S5",
       "shortname": "orbit-s5",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 14999
+      "description": "Універсальний смартфон середнього класу з батареєю 5000 мАг і чистим інтерфейсом.",
+      "price": 14999,
+      "image": "img/orbit-s5.jpg"
     },
     {
       "id": 4,
       "name": "Orbit S5 Lite",
       "shortname": "orbit-s5-lite",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 9999
+      "description": "Доступна модель для дзвінків, месенджерів і відео: легкий корпус та автономність до двох днів.",
+      "price": 9999,
+      "image": "img/orbit-s5-lite.jpg"
     },
     {
       "id": 5,
       "name": "Pixel Wave 3",
       "shortname": "pixel-wave-3",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 17499
+      "description": "Компактний смартфон для фото: нічний режим, стабілізація зображення та стильний скляний корпус.",
+      "price": 17499,
+      "image": "img/pixel-wave-3.jpg"
     }
   ]
 }

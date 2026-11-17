@@ -6,36 +6,41 @@
       "id": 1,
       "name": "SoundPods Mini",
       "shortname": "soundpods-mini",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 2499
+      "description": "Компактні бездротові вкладиші з чохлом-зарядкою та чистим звуком на кожен день.",
+      "price": 2499,
+      "image": "img/soundpods-mini.jpg"
     },
     {
       "id": 2,
       "name": "SoundPods Pro",
       "shortname": "soundpods-pro",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 4999
+      "description": "Вкладиші з активним шумозаглушенням, захистом від води та до 24 годин роботи з кейсом.",
+      "price": 4999,
+      "image": "img/soundpods-pro.jpg"
     },
     {
       "id": 3,
       "name": "BassMax Over-Ear",
       "shortname": "bassmax-over-ear",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 3799
+      "description": "Повнорозмірні навушники з насиченими низькими частотами та м'якими амбушюрами.",
+      "price": 3799,
+      "image": "img/bassmax-over-ear.jpg"
     },
     {
       "id": 4,
       "name": "Silence ANC 2",
       "shortname": "silence-anc-2",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 6999
+      "description": "Накладні навушники з просунутим шумозаглушенням і мікрофонами для чітких дзвінків.",
+      "price": 6999,
+      "image": "img/silence-anc-2.jpg"
     },
     {
       "id": 5,
       "name": "Runner Sport",
       "shortname": "runner-sport",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "price": 1899
+      "description": "Спортивні навушники з надійним кріпленням і захистом від поту для пробіжок і тренувань.",
+      "price": 1899,
+      "image": "img/runner-sport.jpg"
     }
   ]
 }
